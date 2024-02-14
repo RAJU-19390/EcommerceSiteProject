@@ -1,0 +1,25 @@
+﻿@model List<EcommerceSite.Models.Customer>
+
+@{
+    ViewBag.Title = "GetCustomerData";
+}
+
+<h2>Customer Details</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th> Email </th>
+        <th>Full Name</th>
+        <th> Address </th>
+    </tr>
+
+    @foreach (var customer in Model)
+    {
+<tr>
+    <td>@customer.CustomerMail</td>
+    <td>@customer.CustomerName</td>
+    <td>@customer.CustomerAddress</td>
+</tr>
+    }
+</table>
+@Html.ActionLink("Products Menu", "GetProducts","Ecommerce")

@@ -1,0 +1,15 @@
+﻿@model List<EcommerceSite.Models.Product>
+@{
+    ViewBag.Title = "AddToCart";
+}
+
+<h2>Products in Cart</h2>
+<center>
+    <form method="post">
+        <label>Enter Quantity of @ViewBag.id :</label>
+        <input type="number" name="productqty" placeholder="select here..." /><br />
+        <label>Your Deliver Address :</label><h4>@TempData["Customer_Address"]</h4><br />
+        <input type="submit" name="AddToCart" value="Add To Cart" />
+    </form>
+    @Html.ActionLink("Products Menu", "GetProducts")
+</center>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "PaymentMode";
+}
+
+<h2>Payment Mode</h2>
+
+<h3>Total Amount: Rs.@ViewBag.TotalAmount</h3>
+<h3>Delivery Address: @ViewBag.Deliver</h3>
+
+<center>
+    <input type="button" value="Order" onclick="redirectToOrderSuccess()" />
+</center>
+
+<div>
+    @Html.ActionLink("Back to Cart", "AddToCart", "Ecommerce")
+</div>
+
+<script>
+    function redirectToOrderSuccess() {
+        window.location.href = '@Url.Action("OrderSuccess", "Customers")';
+    }
+</script>

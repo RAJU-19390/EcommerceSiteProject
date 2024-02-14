@@ -1,0 +1,6 @@
+122,Dell Mouse,499,10
+503,LED Monitor,3499,10
+302,Dell Keyboard,599,15
+883,Cooling Pad,799,8
+204,HCL i5 12th gen CPU,15999,6
+310,Iphone 15 pro max,129999,7
